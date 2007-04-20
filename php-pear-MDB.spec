@@ -2,12 +2,12 @@
 %define		_pearname	%{_class}
 %define		_status		stable
 
-%define		_requires_exceptions pear(test_setup.php)
+%define		_requires_exceptions pear(test_setup.php)\\|pear(PHPUnit.php)
 
 Summary:	%{_pearname} - unified database API
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 Epoch:		1
 License:	PHP License
 Group:		Development/PHP
@@ -93,7 +93,4 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/Modules/*.php
 %{_datadir}/pear/%{_class}/Modules/Manager/*.php
-
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
