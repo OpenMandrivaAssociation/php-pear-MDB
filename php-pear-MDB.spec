@@ -7,7 +7,7 @@
 Summary:	%{_pearname} - unified database API
 Name:		php-pear-%{_pearname}
 Version:	1.3.0
-Release:	%mkrel 9
+Release:	%mkrel 10
 Epoch:		1
 License:	PHP License
 Group:		Development/PHP
@@ -18,7 +18,6 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRequires:	recode
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -44,10 +43,6 @@ done
 # strip away annoying ^M
 find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
 
-# fix bad xml
-recode -d latin-1..html < package.xml > package.xml~
-mv package.xml~ package.xml
- 
 %install
 rm -rf %{buildroot}
 
