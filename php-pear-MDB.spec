@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.0
-Release:	%mkrel 15
+Release:	%mkrel 16
 Summary:	Unified database API
 Epoch:		1
 License:	PHP License
