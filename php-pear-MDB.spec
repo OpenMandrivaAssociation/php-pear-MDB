@@ -1,8 +1,6 @@
 %define		_class		MDB
 %define		upstream_name	%{_class}
 
-%define		_requires_exceptions pear(test_setup.php)\\|pear(PHPUnit.php)
-
 Name:		php-pear-%{upstream_name}
 Version:	1.3.0
 Release:	%mkrel 19
