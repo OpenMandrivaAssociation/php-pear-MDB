@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.0
-Release:	%mkrel 19
+Release:	20
 Summary:	Unified database API
 Epoch:		1
 License:	PHP License
@@ -15,7 +15,6 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 MDB is a merge of PEAR's DB and Metabases that provides a unified DB
@@ -28,7 +27,6 @@ manager.
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -41,7 +39,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
