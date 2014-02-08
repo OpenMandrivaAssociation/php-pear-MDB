@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.3.0
-Release:	20
+Release:	21
 Summary:	Unified database API
 Epoch:		1
 License:	PHP License
