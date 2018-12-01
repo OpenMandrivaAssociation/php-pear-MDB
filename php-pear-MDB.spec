@@ -5,7 +5,7 @@ Summary:	Unified database API
 Name:		php-pear-%{modname}
 Epoch:		1
 Version:	1.3.0
-Release:	30
+Release:	31
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/MDB/
@@ -44,4 +44,8 @@ install -m 644 %{modname}.xml %{buildroot}%{_datadir}/pear/packages
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/%{_class}.php
 %{_datadir}/pear/packages/%{modname}.xml
+%{_datadir}/pear/doc/MDB/*
+%{_datadir}/pear/test/MDB/tests/*
+
+
 
