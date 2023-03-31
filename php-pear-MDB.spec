@@ -5,7 +5,7 @@ Summary:	Unified database API
 Name:		php-pear-%{modname}
 Epoch:		1
 Version:	1.3.0
-Release:	31
+Release:	32
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/MDB/
