@@ -8,7 +8,7 @@ Version:	1.3.0
 Release:	32
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/MDB/
+Url:		https://pear.php.net/package/MDB/
 Source0:	http://download.pear.php.net/package/%{modname}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	php-pear
